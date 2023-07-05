@@ -1,0 +1,14 @@
+{
+    "cars": [
+      {
+        "id": 1,
+        "make": "Nissan",
+        "model": "GT-R",
+        "year": 2023,
+        "price": 120000,
+        "country": "Japan",
+        "image": "gtr.jpg"
+      }
+    ]
+  }
+  

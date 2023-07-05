@@ -1,0 +1,149 @@
+/* styles.css */
+
+.nav-links {
+    /* ...existing styles... */
+  
+    /* Animate links */
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  
+  .nav-active .nav-links {
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Animate individual links */
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Burger animation */
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .toggle .line2 {
+    opacity: 0;
+  }
+  
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  /* styles.css */
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .burger {
+      display: block;
+    }
+  }
+  /* Styles for the homepage */
+#banner {
+    background-color: #f2f2f2;
+    padding: 50px;
+  }
+  
+  #banner h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  #search {
+    padding: 20px;
+  }
+  
+  #search input[type="text"] {
+    padding: 10px;
+    width: 300px;
+  }
+  
+  #search button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #featured-cars {
+    padding: 50px;
+  }
+  
+  .car {
+    display: inline-block;
+    width: 300px;
+    margin-right: 20px;
+  }
+  
+  .car img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .car h3 {
+    margin: 10px 0;
+  }
+  
+  .car p {
+    margin: 5px 0;
+  }
+  
+  .car button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
