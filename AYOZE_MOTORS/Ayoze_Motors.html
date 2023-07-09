@@ -7,66 +7,88 @@
 <body>
   <header>
     <nav>
-        <div class="logo">
-          <img src="logo.png" alt="Ayoze_motors Logo">
-        </div>
-        <ul class="nav-links">
-          <li><a href="#search">Search</a></li>
-          <li><a href="#featured-cars">Featured Cars</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </nav>
-  </header>
-
-  <main>
-    <section id="banner">
-      <!-- Banner content -->
-      <h1>Welcome to Ayoze_motors</h1>
-      <p>We specialize in importing and showcasing high-performance sports cars.</p>
-    </section>
-
+      <div class="logo">
+        <img src="images/l.png" alt="Ayoze_motors Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#featured-cars">Featured Cars</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      
+    </nav>
     <section id="search">
-      <!-- Search functionality -->
       <form id="searchForm">
-        <input type="text" placeholder="Search for sports cars">
-        <button type="submit">Search</button>
+        <input type="text" placeholder="Search for sports cars"/>
+        <a href="https://www.autotempest.com/">
+          <button type="submit">Search</button>
+        </a>
       </form>
     </section>
-
+  </header>
+  <main>
+    <section id="banner">
+      <h1>Welcome to Ayoze_motors</h1>
+      <p>We specialize in importing and showcasing high-performance sports cars.</p>
+      <div class="image-center">
+        <img src="images/dd.webp" alt="Ayoze_motors">
+        <div class="text-overlay">
+          <h2>New 2024 Nissan GT-R®</h2>
+          <p>The best GT-R</p>
+        </div>
+        <div id="row">
+          <div id="data-Button">
+            <h2 id="msrp">Starting MSRP</h2>
+            <p id="price">$120,990</p>
+            <h2 id="transmission">Transmission</h2>
+            <p id="transmission-details">6-speed Dual-clutch transmission</p>
+            <h2 id="horsepower">Horsepower</h2>
+            <p id="horsepower-details">565 hp @6,800 rpm</p>
+            <h2 id="torque">Torque</h2>
+            <p id="torque-details">467 lb-ft @3,600-5,600 rpm</p>
+          </div>
+        </div>
+        <button id="update-button">Update Data</button>
+      </div>
+      <div id="enhancements">
+        <h2>Nissan GT-R enhancements for 2024</h2>
+        <p>Because legends never sleep</p>
+        <p>There’s no rest for those passionate about ultimate performance. All 2024 GT-R models feature enhanced aerodynamics <br>
+          with new front and rear fascias for added downforce without increasing drag. The T-spec® returns, bringing iconic colors,<br>
+           a bespoke interior, and special badging. And for ultimate performance, the 2024 GT-R NISMO® now features a front <br>
+           limited-slip differential to help tame its awesome 600-horsepower engine.</p>
+      </div>
+    </section>
     <section id="featured-cars">
-      <!-- Highlighted imported sports cars -->
       <h2>Featured Sports Cars</h2>
       <div class="car">
-        <img src="nissanphillips.jpg" alt="GT-R">
-        <h3>Nissan phillips  GT-R</h3>
-        <p>Country of Origin: Yokohama,Japan</p>
+        <img src="images/philips.jpeg" alt="GT-R">
+        <h3>Nissan Phillips GT-R</h3>
+        <p>Country of Origin: Yokohama, Japan</p>
         <p>Engine Capacity: 4798 cc</p>
-        <p><Price:1>15000000</Price:1></p>
+        <p>Price: $15,000,000</p>
         <button class="contact-btn">Contact Seller</button>
       </div>
       <div class="car">
-        <img src="peter.jpg" alt="GT-R">
-        <h4>Nissan GT-R</h4>
-        <p>Country of Origin: Yokohama,Japan</p>
-        <p>Engine Capacity:3798 cc</p>
-        <p><Price:1>12000000</Price:1></p>
+        <img src="images/peter.jpg" alt="GT-R">
+        <h3>Nissan GT-R</h3>
+        <p>Country of Origin: Yokohama, Japan</p>
+        <p>Engine Capacity: 3798 cc</p>
+        <p>Price: $12,000,000</p>
         <button class="contact-btn">Contact Seller</button>
       </div>
     </section>
   </main>
-
   <footer>
     <!-- Footer content -->
     <p>&copy; 2024 Ayoze_motors. All rights reserved.</p>
   </footer>
-
   <script src="Ayoze_Motors.js"></script>
 </body>
 </html>
