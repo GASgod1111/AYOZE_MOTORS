@@ -16,7 +16,9 @@ const navSlide = () => {
 };
 navSlide();
 const searchForm = document.getElementById('searchForm');
-searchForm.addEventListener('submit', function(e) {
+const searchButton = document.getElementById('searchButton');
+
+searchButton.addEventListener('click', function(e) {
   e.preventDefault();
   const searchInput = document.querySelector('#searchForm input[type="text"]');
   const searchTerm = searchInput.value.trim();
@@ -25,11 +27,13 @@ searchForm.addEventListener('submit', function(e) {
     car1: 'https://www.google.com/search?q=a+url+for+all+the+car+pictures&tbm=isch&source=univ&fir=3iZwWmoB3rEbzM%252Ch5o2H4lFM28KrM%252C_%253BhNGnpn7DHIRAMM%252CkNN78RcoLWbQbM%252C_%253B2TNTMoX_sf-_AM%252CpexCxKQSr2TtXM%252C_%253BdOK_9868VDFQmM%252CTj56F7qBhckKYM%252C_%253BUjXWUGRI3A09IM%252CTj56F7qBhckKYM%252C_%253Br116koXHr_H--M%252C9_3ihlq4gNzOHM%252C_%253BI2nYZDlsg9dAtM%252CboalEM1-wV3GtM%252C_%253BK0tDf-G_URDZmM%252CSAT7jSghFpqMMM%252C_%253BOPB8COLm9oFRnM%252C9_3ihlq4gNzOHM%252C_%253B81RI3iZkirwWUM%252CTj56F7qBhckKYM%252C_&usg=AI4_-kSj7S9cXAhnONiOgyqr6ojjONgRFA&sa=X&ved=2ahUKEwiUotPl3P__AhXki_0HHQbGDYAQjJkEegQIHxAC&biw=960&bih=941&dpr=1',
     car2: 'https://www.google.com/'
   };
+
   if (searchTerm in carUrls) {
     window.location.href = carUrls[searchTerm];
   } else {
     alert('Car not found. Please try again.');
   }
+
   searchInput.value = '';
 });
 const contactButtons = document.querySelectorAll('.contact-btn');
